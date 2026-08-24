@@ -13,7 +13,7 @@ const SMALL = [400, 600, 900, 1200];
 /** [sourceFile, outputSlug, widths, quality] */
 const JOBS = [
   ["hero-conchas-patron.jpg", "hero", LARGE, 78],
-  ["about-conchas-tabla-conxa.webp", "about", MEDIUM, 76],
+  ["about-panadero-hogazas.jpg", "about", MEDIUM, 76],
   ["ubicacion-fachada-dia.jpg", "ubicacion", MEDIUM, 76],
   ["cta-fachada-neon.jpg", "cta", MEDIUM, 76],
   ["galeria-01-mostrador.jpg", "galeria-01-mostrador", SMALL, 74],
@@ -24,6 +24,7 @@ const JOBS = [
   ["galeria-06-espresso.jpg", "galeria-06-espresso", SMALL, 74],
   ["galeria-07-matcha.jpg", "galeria-07-matcha", SMALL, 74],
   ["galeria-08-vitrina-plantas.jpg", "galeria-08-vitrina", SMALL, 74],
+  ["galeria-09-masa-madre.webp", "galeria-09-masa-madre", SMALL, 74],
 ];
 
 async function buildResponsiveSet() {
