@@ -1,0 +1,15 @@
+{
+  "name": "Conxa — Panadería y Cafetería",
+  "short_name": "Conxa",
+  "description": "Panadería y cafetería mexicana contemporánea en San Luis Potosí. Pan artesanal de masa madre, horneado diario.",
+  "start_url": "/conxa/",
+  "scope": "/conxa/",
+  "display": "standalone",
+  "lang": "es-MX",
+  "background_color": "#171512",
+  "theme_color": "#171512",
+  "icons": [
+    { "src": "/conxa/img/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/conxa/img/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

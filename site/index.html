@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Conxa — Panadería y Cafetería de Masa Madre en San Luis Potosí</title>
+<meta name="description" content="Conxa: panadería y cafetería mexicana contemporánea en San Luis Potosí. Pan artesanal de masa madre horneado a diario, café de especialidad y pan dulce hecho con procesos tradicionales." />
+<meta name="keywords" content="panadería San Luis Potosí, masa madre, cafetería SLP, pan artesanal, pan dulce, Conxa panadería, café de especialidad SLP" />
+<link rel="canonical" href="https://publifix.github.io/conxa/" />
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="restaurant.restaurant" />
+<meta property="og:site_name" content="Conxa" />
+<meta property="og:locale" content="es_MX" />
+<meta property="og:title" content="Conxa — Panadería y Cafetería de Masa Madre en San Luis Potosí" />
+<meta property="og:description" content="Pan artesanal de masa madre, horneado diario con ingredientes naturales y procesos tradicionales. Panadería y cafetería contemporánea en San Luis Potosí." />
+<meta property="og:image" content="https://publifix.github.io/conxa/img/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:url" content="https://publifix.github.io/conxa/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Conxa — Panadería y Cafetería de Masa Madre en San Luis Potosí" />
+<meta name="twitter:description" content="Pan artesanal de masa madre, horneado diario en San Luis Potosí. Conoce el menú, la ubicación y ordena por WhatsApp." />
+<meta name="twitter:image" content="https://publifix.github.io/conxa/img/og-image.jpg" />
+
+<!-- Icons / manifest -->
+<link rel="icon" type="image/png" sizes="32x32" href="/conxa/img/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/conxa/img/favicon-16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/conxa/img/apple-touch-icon.png" />
+<link rel="manifest" href="/conxa/site.webmanifest" />
+<meta name="theme-color" content="#171512" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="image" imagesrcset="/conxa/img/hero-640.webp 640w, /conxa/img/hero-960.webp 960w, /conxa/img/hero-1280.webp 1280w, /conxa/img/hero-1600.webp 1600w, /conxa/img/hero-1920.webp 1920w, /conxa/img/hero-2400.webp 2400w" imagesizes="100vw" fetchpriority="high" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["Bakery", "CafeOrCoffeeShop"],
+  "name": "Conxa",
+  "image": "https://publifix.github.io/conxa/img/og-image.jpg",
+  "url": "https://publifix.github.io/conxa/",
+  "telephone": "+524441133863",
+  "email": "conxapanaderia@gmail.com",
+  "servesCuisine": "Panadería, Cafetería, Mexicana contemporánea",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle Cañada Real #165, Col. Lomas del Tecnológico",
+    "addressLocality": "San Luis Potosí",
+    "addressRegion": "SLP",
+    "postalCode": "78215",
+    "addressCountry": "MX"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "opens": "09:00",
+    "closes": "21:00"
+  },
+  "menu": "https://publifix.github.io/conxa/#menu",
+  "sameAs": [
+    "https://www.instagram.com/conxapanaderia",
+    "https://www.facebook.com/conxapanaderia"
+  ]
+}
+</script>
+
+<script type="module" src="/src/main.js"></script>
+</head>
+<body>
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-conxa-wheat focus:text-conxa-black focus:px-4 focus:py-2 focus:rounded">
+  Saltar al contenido principal
+</a>
+
+<div id="scroll-progress" class="fixed top-0 left-0 h-[2px] bg-conxa-wheat/90 z-[80] w-0"></div>
+
+<!-- ============ HEADER ============ -->
+<header id="site-header">
+  <div class="mx-auto max-w-[1440px] px-5 md:px-8 h-[76px] flex items-center justify-between">
+    <a href="#hero" class="shrink-0" aria-label="Conxa — inicio">
+      <img
+        src="/conxa/img/logo-conxa.png"
+        alt="Conxa"
+        width="160"
+        height="53"
+        class="h-8 md:h-9 w-auto"
+      />
+    </a>
+
+    <nav aria-label="Navegación principal" class="hidden lg:flex items-center gap-9">
+      <a href="#hero" class="nav-link">Inicio</a>
+      <a href="#nosotros" class="nav-link">Nosotros</a>
+      <a href="#menu" class="nav-link">Menú</a>
+      <a href="#ubicacion" class="nav-link">Ubicación</a>
+      <a href="#footer" class="nav-link">Contacto</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a
+        href="https://wa.me/524441133863"
+        target="_blank"
+        rel="noopener"
+        class="btn-light hidden sm:inline-flex"
+      >
+        Ordena por WhatsApp
+      </a>
+      <button
+        id="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-drawer"
+        aria-label="Abrir menú de navegación"
+        class="lg:hidden inline-flex h-11 w-11 items-center justify-center text-conxa-wheat"
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MOBILE DRAWER (fully solid overlay, single instance) ============ -->
+<div id="mobile-drawer" class="hidden" data-open="false" role="dialog" aria-modal="true" aria-label="Menú de navegación">
+  <div id="mobile-drawer-panel" class="h-full w-full flex flex-col px-6 pt-6 pb-10">
+    <div class="flex items-center justify-between h-[52px]">
+      <img src="/conxa/img/logo-conxa.png" alt="Conxa" width="130" height="43" class="h-7 w-auto" />
+      <button
+        id="menu-close"
+        type="button"
+        aria-label="Cerrar menú de navegación"
+        class="inline-flex h-11 w-11 items-center justify-center text-conxa-wheat"
+      >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+
+    <nav aria-label="Navegación móvil" class="mt-10 flex flex-col gap-1">
+      <a data-drawer-item href="#hero" class="py-4 border-b border-conxa-wheat/10 font-display font-medium text-2xl text-conxa-wheat">Inicio</a>
+      <a data-drawer-item href="#nosotros" class="py-4 border-b border-conxa-wheat/10 font-display font-medium text-2xl text-conxa-wheat">Nosotros</a>
+      <a data-drawer-item href="#menu" class="py-4 border-b border-conxa-wheat/10 font-display font-medium text-2xl text-conxa-wheat">Menú</a>
+      <a data-drawer-item href="#ubicacion" class="py-4 border-b border-conxa-wheat/10 font-display font-medium text-2xl text-conxa-wheat">Ubicación</a>
+      <a data-drawer-item href="#footer" class="py-4 font-display font-medium text-2xl text-conxa-wheat">Contacto</a>
+    </nav>
+
+    <a
+      data-drawer-item
+      href="https://wa.me/524441133863"
+      target="_blank"
+      rel="noopener"
+      class="btn-light mt-auto w-full"
+    >
+      Ordena por WhatsApp
+    </a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section id="hero" class="relative min-h-[100dvh] flex flex-col justify-end overflow-hidden bg-conxa-black">
+    <img
+      id="hero-image"
+      src="/conxa/img/hero-1920.webp"
+      srcset="/conxa/img/hero-640.webp 640w, /conxa/img/hero-960.webp 960w, /conxa/img/hero-1280.webp 1280w, /conxa/img/hero-1600.webp 1600w, /conxa/img/hero-1920.webp 1920w, /conxa/img/hero-2400.webp 2400w"
+      sizes="100vw"
+      alt="Conchas de masa madre recién horneadas, en hileras, con la firma textura acanalada de Conxa"
+      width="2400"
+      height="2400"
+      fetchpriority="high"
+      decoding="async"
+      class="absolute inset-0 h-full w-full object-cover grayscale-[15%] contrast-[1.08]"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-conxa-black via-conxa-black/55 to-conxa-black/25"></div>
+
+    <div class="relative mx-auto w-full max-w-[1440px] px-5 md:px-8 pb-16 md:pb-24 pt-40">
+      <p class="kicker-light reveal">Panadería y cafetería · San Luis Potosí</p>
+      <h1 class="reveal mt-4 max-w-4xl font-display font-bold text-conxa-wheat text-[38px] leading-[1.05] sm:text-[44px] md:text-[64px] lg:text-[72px]">
+        Pan hecho con tiempo, todos los días
+      </h1>
+      <p class="reveal mt-6 max-w-xl text-conxa-wheat/80 text-[16px] md:text-[18px] leading-relaxed">
+        Panadería y cafetería mexicana contemporánea en San Luis Potosí. Pan artesanal de masa madre, horneado diario con ingredientes naturales y procesos tradicionales.
+      </p>
+      <div class="reveal mt-9 flex flex-col sm:flex-row gap-4">
+        <a href="#nosotros" class="btn-light">Conoce nuestra panadería artesanal</a>
+        <a href="https://wa.me/524441133863" target="_blank" rel="noopener" class="btn-outline">Ordena por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE CONXA ============ -->
+  <section id="nosotros" class="bg-conxa-wheat py-24 md:py-32">
+    <div class="mx-auto max-w-[1440px] px-5 md:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <div class="lg:col-span-6 lg:order-2 reveal" data-reveal-group="nosotros">
+        <img
+          src="/conxa/img/about-1440.webp"
+          srcset="/conxa/img/about-480.webp 480w, /conxa/img/about-768.webp 768w, /conxa/img/about-1080.webp 1080w, /conxa/img/about-1440.webp 1440w"
+          sizes="(min-width: 1024px) 45vw, 100vw"
+          alt="Conchas de chocolate recién horneadas sobre una tabla de madera grabada con el nombre Conxa"
+          width="1440"
+          height="1796"
+          loading="lazy"
+          decoding="async"
+          class="w-full h-[420px] md:h-[560px] lg:h-[640px] object-cover"
+        />
+      </div>
+      <div class="lg:col-span-6 lg:order-1">
+        <p class="kicker reveal" data-reveal-group="nosotros">Sobre nosotros</p>
+        <h2 class="reveal mt-4 font-display font-bold text-conxa-black text-[30px] leading-tight sm:text-[34px] md:text-[42px]" data-reveal-group="nosotros">
+          Panadería contemporánea, oficio de siempre
+        </h2>
+        <p class="reveal mt-6 text-conxa-black/80 text-[16px] md:text-[17px] leading-relaxed max-w-xl" data-reveal-group="nosotros">
+          Conxa nace de la idea de revalorizar el pan: masa madre trabajada con tiempo, ingredientes locales y procesos tradicionales, en un espacio pensado para quedarte a leer, platicar o simplemente ver llover con un café en la mano. Un proyecto liderado por el chef y panadero Uriel Ortiz, con experiencia en cocinas como La Docena y Pujol.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENÚ ============ -->
+  <section id="menu" class="bg-conxa-cream py-24 md:py-32">
+    <div class="mx-auto max-w-[1000px] px-5 md:px-8">
+      <p class="kicker reveal text-center">Menú</p>
+      <h2 class="reveal mt-4 text-center font-display font-bold text-conxa-black text-[30px] sm:text-[34px] md:text-[42px]">
+        Lo que horneamos cada día
+      </h2>
+      <p class="reveal mt-5 text-center text-conxa-black/70 max-w-xl mx-auto leading-relaxed">
+        De la barra de café a la vitrina de pan dulce, cada producto se hornea o se prepara el mismo día.
+      </p>
+
+      <!-- Tabs -->
+      <div class="reveal mt-14 -mx-5 px-5 md:mx-0 md:px-0 overflow-x-auto">
+        <div role="tablist" aria-label="Categorías del menú" class="flex gap-7 md:gap-10 border-b border-conxa-black/15 min-w-max md:min-w-0 md:justify-center">
+          <button data-menu-tab="desayunos" role="tab" id="tab-desayunos" aria-controls="panel-desayunos" aria-selected="true" class="menu-tab">Desayunos</button>
+          <button data-menu-tab="cafe" role="tab" id="tab-cafe" aria-controls="panel-cafe" aria-selected="false" tabindex="-1" class="menu-tab">Barra de Café</button>
+          <button data-menu-tab="bebidas" role="tab" id="tab-bebidas" aria-controls="panel-bebidas" aria-selected="false" tabindex="-1" class="menu-tab">Barra de Bebidas</button>
+          <button data-menu-tab="pandulce" role="tab" id="tab-pandulce" aria-controls="panel-pandulce" aria-selected="false" tabindex="-1" class="menu-tab">Pan Dulce</button>
+          <button data-menu-tab="postres" role="tab" id="tab-postres" aria-controls="panel-postres" aria-selected="false" tabindex="-1" class="menu-tab">Postres</button>
+        </div>
+      </div>
+
+      <!-- Desayunos -->
+      <div data-menu-panel="desayunos" id="panel-desayunos" role="tabpanel" aria-labelledby="tab-desayunos" tabindex="0" class="mt-10">
+        <p class="kicker !text-conxa-ash mb-2">8:45 am – 2:00 pm</p>
+        <div class="divide-y-0">
+          <div class="menu-item"><div><span class="menu-item-name">Baguette</span><span class="menu-item-desc">De masa madre, con jamón de cerdo casero, lajas de queso maduro y mayonesa de ajo negro (c/ lechuga y aguacate +20)</span></div><span class="menu-item-price">$110</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Croissant</span><span class="menu-item-desc">Con jamón de cerdo casero, lajas de queso maduro y mayonesa de ajo negro (c/ lechuga y aguacate +20)</span></div><span class="menu-item-price">$110</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Grilled cheese</span><span class="menu-item-desc">De queso cheddar y queso menonita, con pollo ahumado (+ajo +5, o barbacoa de cordero +15)</span></div><span class="menu-item-price">$150</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Pretzel</span><span class="menu-item-desc">Con queso menonita, mantequilla de romero, huevo estrellado y cebollín</span></div><span class="menu-item-price">$139</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Quesadilla</span><span class="menu-item-desc">De maíz azul criollo, queso local, hoja santa y aguacate</span></div><span class="menu-item-price">$75</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Claras</span><span class="menu-item-desc">De huevo sofrito de huitlacoche, aguacate y hierbas + pan de masa madre</span></div><span class="menu-item-price">$120</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Mollete</span><span class="menu-item-desc">Con baguette de masa madre, frijol negro, queso gratinado, aguacate y pico de gallo</span></div><span class="menu-item-price">$95</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Brioche</span><span class="menu-item-desc">Bollo brioche de papa, con mayonesa de ajo frito, omelette tierno con queso edam y lechuga</span></div><span class="menu-item-price">$135</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Migas</span><span class="menu-item-desc">De maíz azul criollo, con huevo revuelto en salsa de frijol negro, aguacate, requesón, cebolla y cilantro</span></div><span class="menu-item-price">$100</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Bun</span><span class="menu-item-desc">De masa madre y semillas, con mantequilla de ajo negro con hierbas y queso menonita</span></div><span class="menu-item-price">$55</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Torta de cochinito</span><span class="menu-item-desc">Telera de cochinito, con frijol negro y cebolla encurtida</span></div><span class="menu-item-price">$110</span></div>
+        </div>
+
+        <p class="menu-subgroup-title">Ingredientes extra</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8">
+          <div class="menu-item"><span class="menu-item-name text-[14px] md:text-[15px]">Aguacate (80 gr)</span><span class="menu-item-price">$25</span></div>
+          <div class="menu-item"><span class="menu-item-name text-[14px] md:text-[15px]">Huevo de libre pastoreo, al gusto</span><span class="menu-item-price">$18</span></div>
+          <div class="menu-item"><span class="menu-item-name text-[14px] md:text-[15px]">Barbacoa de cordero (60 gr)</span><span class="menu-item-price">$45</span></div>
+          <div class="menu-item"><span class="menu-item-name text-[14px] md:text-[15px]">Cecina (80 gr)</span><span class="menu-item-price">$40</span></div>
+          <div class="menu-item"><span class="menu-item-name text-[14px] md:text-[15px]">Cochinita (60 gr)</span><span class="menu-item-price">$40</span></div>
+          <div class="menu-item"><span class="menu-item-name text-[14px] md:text-[15px]">Pollo asado (50 gr)</span><span class="menu-item-price">$40</span></div>
+          <div class="menu-item"><span class="menu-item-name text-[14px] md:text-[15px]">Jamón de cerdo casero</span><span class="menu-item-price">$35</span></div>
+          <div class="menu-item"><span class="menu-item-name text-[14px] md:text-[15px]">Huevo enhojado en hoja santa</span><span class="menu-item-price">$25</span></div>
+        </div>
+      </div>
+
+      <!-- Barra de Café -->
+      <div data-menu-panel="cafe" id="panel-cafe" role="tabpanel" aria-labelledby="tab-cafe" tabindex="0" class="mt-10" hidden>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10">
+          <div class="menu-item"><span class="menu-item-name">Espresso sencillo</span><span class="menu-item-price">$39</span></div>
+          <div class="menu-item"><span class="menu-item-name">Espresso doble</span><span class="menu-item-price">$45</span></div>
+          <div class="menu-item"><span class="menu-item-name">Espresso cortado</span><span class="menu-item-price">$50</span></div>
+          <div class="menu-item"><span class="menu-item-name">Espresso macchiato</span><span class="menu-item-price">$50</span></div>
+          <div class="menu-item"><span class="menu-item-name">Americano</span><span class="menu-item-price">$52</span></div>
+          <div class="menu-item"><span class="menu-item-name">Café con leche</span><span class="menu-item-price">$56</span></div>
+          <div class="menu-item"><span class="menu-item-name">Cold brew</span><span class="menu-item-price">$56</span></div>
+          <div class="menu-item"><span class="menu-item-name">Cold brew base leche</span><span class="menu-item-price">$62</span></div>
+          <div class="menu-item"><span class="menu-item-name">Flat white</span><span class="menu-item-price">$54</span></div>
+          <div class="menu-item"><span class="menu-item-name">Latte</span><span class="menu-item-price">$66</span></div>
+          <div class="menu-item"><span class="menu-item-name">Capuccino</span><span class="menu-item-price">$66</span></div>
+          <div class="menu-item"><span class="menu-item-name">Café de olla</span><span class="menu-item-price">$68</span></div>
+          <div class="menu-item"><span class="menu-item-name">Café de olla latte</span><span class="menu-item-price">$68</span></div>
+          <div class="menu-item"><span class="menu-item-name">Toffe latte</span><span class="menu-item-price">$69</span></div>
+          <div class="menu-item"><span class="menu-item-name">Horchata latte frío</span><span class="menu-item-price">$69</span></div>
+          <div class="menu-item"><span class="menu-item-name">Moka</span><span class="menu-item-price">$69</span></div>
+        </div>
+        <p class="mt-6 text-[13px] text-conxa-ash leading-relaxed">
+          Las bebidas pueden ser frías o calientes. Leche de almendra hecha en Conxa +20. Extra de leche +15.
+        </p>
+      </div>
+
+      <!-- Barra de Bebidas -->
+      <div data-menu-panel="bebidas" id="panel-bebidas" role="tabpanel" aria-labelledby="tab-bebidas" tabindex="0" class="mt-10" hidden>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10">
+          <div class="menu-item"><span class="menu-item-name">Chocolate de agua</span><span class="menu-item-price">$58</span></div>
+          <div class="menu-item"><span class="menu-item-name">Chocolate con leche</span><span class="menu-item-price">$68</span></div>
+          <div class="menu-item"><span class="menu-item-name">Matcha de agua</span><span class="menu-item-price">$66</span></div>
+          <div class="menu-item"><span class="menu-item-name">Matcha de leche</span><span class="menu-item-price">$72</span></div>
+          <div class="menu-item"><span class="menu-item-name">Chai de agua<span class="menu-item-desc">Receta de Conxa</span></span><span class="menu-item-price">$55</span></div>
+          <div class="menu-item"><span class="menu-item-name">Chai latte<span class="menu-item-desc">Receta de Conxa</span></span><span class="menu-item-price">$65</span></div>
+          <div class="menu-item"><span class="menu-item-name">Golden milk</span><span class="menu-item-price">$68</span></div>
+          <div class="menu-item"><span class="menu-item-name">Té o infusiones</span><span class="menu-item-price">$48</span></div>
+          <div class="menu-item"><span class="menu-item-name">Kerucha<span class="menu-item-desc">Kefir + kombucha, 280ml</span></span><span class="menu-item-price">$70</span></div>
+          <div class="menu-item"><span class="menu-item-name">Kombucha umani<span class="menu-item-desc">355ml</span></span><span class="menu-item-price">$78</span></div>
+          <div class="menu-item"><span class="menu-item-name">Jugo de manzana menonita</span><span class="menu-item-price">$48</span></div>
+          <div class="menu-item"><span class="menu-item-name">Agua de tamarindo orgánico<span class="menu-item-desc">450ml</span></span><span class="menu-item-price">$65</span></div>
+          <div class="menu-item"><span class="menu-item-name">Agua mineral Lourdes<span class="menu-item-desc">340ml</span></span><span class="menu-item-price">$36</span></div>
+          <div class="menu-item"><span class="menu-item-name">Agua mineral S. Pellegrino<span class="menu-item-desc">250ml</span></span><span class="menu-item-price">$38</span></div>
+          <div class="menu-item"><span class="menu-item-name">Agua mineral Perrier<span class="menu-item-desc">330ml</span></span><span class="menu-item-price">$42</span></div>
+        </div>
+      </div>
+
+      <!-- Pan Dulce -->
+      <div data-menu-panel="pandulce" id="panel-pandulce" role="tabpanel" aria-labelledby="tab-pandulce" tabindex="0" class="mt-10" hidden>
+        <p class="menu-subgroup-title">Sencillas</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10">
+          <div class="menu-item"><span class="menu-item-name">Conxa tradicional vainilla</span><span class="menu-item-price">$33</span></div>
+          <div class="menu-item"><span class="menu-item-name">Conxa tradicional de chocolate</span><span class="menu-item-price">$34</span></div>
+          <div class="menu-item"><span class="menu-item-name">Conxa tradicional combinada</span><span class="menu-item-price">$35</span></div>
+          <div class="menu-item"><span class="menu-item-name">Conxa de chocolate con sal de mar</span><span class="menu-item-price">$38</span></div>
+          <div class="menu-item"><span class="menu-item-name">Conxa de cubierta de mantequilla</span><span class="menu-item-price">$36</span></div>
+        </div>
+
+        <p class="menu-subgroup-title">Rellenas</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10">
+          <div class="menu-item"><span class="menu-item-name">Conxa de pepita de calabaza</span><span class="menu-item-price">$56</span></div>
+          <div class="menu-item"><span class="menu-item-name">Conxa de almendra</span><span class="menu-item-price">$58</span></div>
+          <div class="menu-item"><span class="menu-item-name">Conxa de avellana</span><span class="menu-item-price">$58</span></div>
+          <div class="menu-item"><span class="menu-item-name">Conxa de cacahuate</span><span class="menu-item-price">$54</span></div>
+        </div>
+
+        <p class="menu-subgroup-title">Laminados</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10">
+          <div class="menu-item"><span class="menu-item-name">Chocolatín</span><span class="menu-item-price">$42</span></div>
+          <div class="menu-item"><span class="menu-item-name">Croissant</span><span class="menu-item-price">$39</span></div>
+          <div class="menu-item"><span class="menu-item-name">Rol de canela</span><span class="menu-item-price">$49</span></div>
+          <div class="menu-item"><span class="menu-item-name">Oreja</span><span class="menu-item-price">$30</span></div>
+        </div>
+
+        <p class="menu-subgroup-title">Otros</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10">
+          <div class="menu-item"><div><span class="menu-item-name">Pan de elote</span><span class="menu-item-desc">Extra de rompope +12</span></div><span class="menu-item-price">$30</span></div>
+          <div class="menu-item"><span class="menu-item-name">Garibaldi con amaranto</span><span class="menu-item-price">$38</span></div>
+          <div class="menu-item"><span class="menu-item-name">Galleta de chocolate con sal</span><span class="menu-item-price">$28</span></div>
+          <div class="menu-item"><span class="menu-item-name">Galleta gigante de caramelo o avena</span><span class="menu-item-price">$44</span></div>
+          <div class="menu-item"><span class="menu-item-name">Galleta gigante de matcha, pistache y gianduja</span><span class="menu-item-price">$48</span></div>
+          <div class="menu-item"><span class="menu-item-name">Panqué de pepita de calabaza</span><span class="menu-item-price">$46</span></div>
+        </div>
+      </div>
+
+      <!-- Postres -->
+      <div data-menu-panel="postres" id="panel-postres" role="tabpanel" aria-labelledby="tab-postres" tabindex="0" class="mt-10" hidden>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10">
+          <div class="menu-item"><span class="menu-item-name">Macaron</span><span class="menu-item-price">$28</span></div>
+          <div class="menu-item"><span class="menu-item-name">Tiramisú <span class="menu-item-desc inline">(Conxa)</span></span><span class="menu-item-price">$95</span></div>
+          <div class="menu-item"><span class="menu-item-name">Pastel de chocolate</span><span class="menu-item-price">$75</span></div>
+          <div class="menu-item"><div><span class="menu-item-name">Pastel de queso fresco, miel y vainilla</span><span class="menu-item-desc">Confitura de guayaba +15</span></div><span class="menu-item-price">$70</span></div>
+        </div>
+      </div>
+
+      <div class="reveal mt-14 flex justify-center">
+        <a href="https://wa.me/524441133863" target="_blank" rel="noopener" class="btn-dark">Ordena por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALERÍA ============ -->
+  <section id="galeria" class="bg-conxa-wheat py-24 md:py-32">
+    <div class="mx-auto max-w-[1440px] px-5 md:px-8">
+      <p class="kicker reveal text-center">Galería</p>
+      <h2 class="reveal mt-4 text-center font-display font-bold text-conxa-black text-[30px] sm:text-[34px] md:text-[42px]">
+        Un vistazo a Conxa
+      </h2>
+
+      <div class="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+        <figure class="reveal group relative aspect-[4/5] overflow-hidden bg-conxa-cream" data-reveal-group="galeria">
+          <img src="/conxa/img/galeria-01-mostrador-1200.webp" srcset="/conxa/img/galeria-01-mostrador-400.webp 400w, /conxa/img/galeria-01-mostrador-600.webp 600w, /conxa/img/galeria-01-mostrador-900.webp 900w, /conxa/img/galeria-01-mostrador-1200.webp 1200w" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw" alt="Vitrina de Conxa con pan recién horneado y pared de panes colgantes" width="1200" height="833" loading="lazy" decoding="async" class="h-full w-full object-cover grayscale-[20%] contrast-[1.05] transition-transform duration-700 ease-out-expo group-hover:scale-[1.06]" />
+        </figure>
+        <figure class="reveal group relative aspect-[4/5] overflow-hidden bg-conxa-cream" data-reveal-group="galeria">
+          <img src="/conxa/img/galeria-02-anaquel-1200.webp" srcset="/conxa/img/galeria-02-anaquel-400.webp 400w, /conxa/img/galeria-02-anaquel-600.webp 600w, /conxa/img/galeria-02-anaquel-900.webp 900w, /conxa/img/galeria-02-anaquel-1200.webp 1200w" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw" alt="Pretzels y piezas de pan artesanal acomodados en anaquel de madera" width="1200" height="1200" loading="lazy" decoding="async" class="h-full w-full object-cover grayscale-[20%] contrast-[1.05] transition-transform duration-700 ease-out-expo group-hover:scale-[1.06]" />
+        </figure>
+        <figure class="reveal group relative aspect-[4/5] overflow-hidden bg-conxa-cream" data-reveal-group="galeria">
+          <img src="/conxa/img/galeria-03-rosca-1200.webp" srcset="/conxa/img/galeria-03-rosca-400.webp 400w, /conxa/img/galeria-03-rosca-600.webp 600w, /conxa/img/galeria-03-rosca-900.webp 900w, /conxa/img/galeria-03-rosca-1200.webp 1200w" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw" alt="Rosca artesanal decorada con cítricos en caja de empaque de Conxa" width="1200" height="1200" loading="lazy" decoding="async" class="h-full w-full object-cover grayscale-[20%] contrast-[1.05] transition-transform duration-700 ease-out-expo group-hover:scale-[1.06]" />
+        </figure>
+        <figure class="reveal group relative aspect-[4/5] overflow-hidden bg-conxa-cream" data-reveal-group="galeria">
+          <img src="/conxa/img/galeria-04-focaccia-1200.webp" srcset="/conxa/img/galeria-04-focaccia-400.webp 400w, /conxa/img/galeria-04-focaccia-600.webp 600w, /conxa/img/galeria-04-focaccia-900.webp 900w, /conxa/img/galeria-04-focaccia-1200.webp 1200w" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw" alt="Focaccia de papa y romero recién horneada" width="1200" height="1200" loading="lazy" decoding="async" class="h-full w-full object-cover grayscale-[20%] contrast-[1.05] transition-transform duration-700 ease-out-expo group-hover:scale-[1.06]" />
+        </figure>
+        <figure class="reveal group relative aspect-[4/5] overflow-hidden bg-conxa-cream" data-reveal-group="galeria">
+          <img src="/conxa/img/galeria-05-avellanas-1200.webp" srcset="/conxa/img/galeria-05-avellanas-400.webp 400w, /conxa/img/galeria-05-avellanas-600.webp 600w, /conxa/img/galeria-05-avellanas-900.webp 900w, /conxa/img/galeria-05-avellanas-1200.webp 1200w" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw" alt="Pan dulce relleno cubierto con avellanas tostadas" width="1200" height="1200" loading="lazy" decoding="async" class="h-full w-full object-cover grayscale-[20%] contrast-[1.05] transition-transform duration-700 ease-out-expo group-hover:scale-[1.06]" />
+        </figure>
+        <figure class="reveal group relative aspect-[4/5] overflow-hidden bg-conxa-cream" data-reveal-group="galeria">
+          <img src="/conxa/img/galeria-06-espresso-1200.webp" srcset="/conxa/img/galeria-06-espresso-400.webp 400w, /conxa/img/galeria-06-espresso-600.webp 600w, /conxa/img/galeria-06-espresso-900.webp 900w, /conxa/img/galeria-06-espresso-1200.webp 1200w" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw" alt="Barista preparando espresso en la barra de café de Conxa" width="1200" height="1496" loading="lazy" decoding="async" class="h-full w-full object-cover grayscale-[20%] contrast-[1.05] transition-transform duration-700 ease-out-expo group-hover:scale-[1.06]" />
+        </figure>
+        <figure class="reveal group relative aspect-[4/5] overflow-hidden bg-conxa-cream" data-reveal-group="galeria">
+          <img src="/conxa/img/galeria-07-matcha-1200.webp" srcset="/conxa/img/galeria-07-matcha-400.webp 400w, /conxa/img/galeria-07-matcha-600.webp 600w, /conxa/img/galeria-07-matcha-900.webp 900w, /conxa/img/galeria-07-matcha-1200.webp 1200w" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw" alt="Matcha latte servido en taza de cerámica artesanal" width="1200" height="1200" loading="lazy" decoding="async" class="h-full w-full object-cover grayscale-[20%] contrast-[1.05] transition-transform duration-700 ease-out-expo group-hover:scale-[1.06]" />
+        </figure>
+        <figure class="reveal group relative aspect-[4/5] overflow-hidden bg-conxa-cream" data-reveal-group="galeria">
+          <img src="/conxa/img/galeria-08-vitrina-1200.webp" srcset="/conxa/img/galeria-08-vitrina-400.webp 400w, /conxa/img/galeria-08-vitrina-600.webp 600w, /conxa/img/galeria-08-vitrina-900.webp 900w, /conxa/img/galeria-08-vitrina-1200.webp 1200w" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw" alt="Interior de Conxa: vitrina de pan y plantas junto al ventanal" width="1200" height="751" loading="lazy" decoding="async" class="h-full w-full object-cover grayscale-[20%] contrast-[1.05] transition-transform duration-700 ease-out-expo group-hover:scale-[1.06]" />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIOS (MOCK) ============ -->
+  <!-- // MOCK — sustituir por reseñas reales del cliente -->
+  <section id="testimonios" class="bg-conxa-black py-24 md:py-32">
+    <div class="mx-auto max-w-[1000px] px-5 md:px-8 text-center">
+      <p class="kicker-light reveal">Comensales</p>
+      <h2 class="reveal mt-4 font-display font-bold text-conxa-wheat text-[30px] sm:text-[34px] md:text-[42px]">
+        Lo que se vive en Conxa
+      </h2>
+
+      <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
+        <blockquote class="reveal" data-reveal-group="testimonios">
+          <p class="font-display text-conxa-wheat text-[19px] md:text-[20px] leading-snug">
+            "Llegamos por una concha y terminamos quedándonos toda la tarde. El lugar invita a no tener prisa."
+          </p>
+          <footer class="mt-5 kicker-light">— Comensal <span class="normal-case tracking-normal opacity-60">(mock)</span></footer>
+        </blockquote>
+        <blockquote class="reveal" data-reveal-group="testimonios">
+          <p class="font-display text-conxa-wheat text-[19px] md:text-[20px] leading-snug">
+            "El pan de masa madre se nota que está hecho con tiempo. Se siente distinto a cualquier otro lugar de la ciudad."
+          </p>
+          <footer class="mt-5 kicker-light">— Comensal <span class="normal-case tracking-normal opacity-60">(mock)</span></footer>
+        </blockquote>
+        <blockquote class="reveal" data-reveal-group="testimonios">
+          <p class="font-display text-conxa-wheat text-[19px] md:text-[20px] leading-snug">
+            "Mi café de las mañanas de fin de semana. Siempre hay algo nuevo en la vitrina."
+          </p>
+          <footer class="mt-5 kicker-light">— Comensal <span class="normal-case tracking-normal opacity-60">(mock)</span></footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA INTERMEDIO ============ -->
+  <section class="relative bg-conxa-soft py-24 md:py-28 overflow-hidden">
+    <img
+      src="/conxa/img/cta-1440.webp"
+      srcset="/conxa/img/cta-480.webp 480w, /conxa/img/cta-768.webp 768w, /conxa/img/cta-1080.webp 1080w, /conxa/img/cta-1440.webp 1440w"
+      sizes="100vw"
+      alt="Fachada de Conxa de noche, con el letrero de neón conxa iluminado"
+      width="1440"
+      height="2196"
+      loading="lazy"
+      decoding="async"
+      class="absolute inset-0 h-full w-full object-cover opacity-40"
+    />
+    <div class="absolute inset-0 bg-conxa-black/55"></div>
+    <div class="relative mx-auto max-w-[1000px] px-5 md:px-8 text-center">
+      <p class="reveal font-display font-bold text-conxa-wheat text-[26px] sm:text-[32px] md:text-[38px] leading-tight">
+        ¿Ya se te antojó una concha?
+      </p>
+      <a href="https://wa.me/524441133863" target="_blank" rel="noopener" class="reveal btn-light mt-8 inline-flex">
+        Ordena por WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ UBICACIÓN Y HORARIO ============ -->
+  <section id="ubicacion" class="bg-conxa-wheat py-24 md:py-32">
+    <div class="mx-auto max-w-[1440px] px-5 md:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+      <div class="lg:col-span-5">
+        <p class="kicker reveal">Ubicación</p>
+        <h2 class="reveal mt-4 font-display font-bold text-conxa-black text-[30px] leading-tight sm:text-[34px] md:text-[42px]">
+          Visítanos en Lomas del Tecnológico
+        </h2>
+        <address class="reveal not-italic mt-6 text-conxa-black/80 text-[16px] md:text-[17px] leading-relaxed">
+          Calle Cañada Real #165, Col. Lomas del Tecnológico,<br />
+          San Luis Potosí, S.L.P. 78215
+        </address>
+        <p class="reveal mt-5 text-conxa-black/80 text-[16px] md:text-[17px]">
+          <span class="font-semibold">Horario:</span> Lunes a Domingo, 9:00 am – 9:00 pm
+        </p>
+        <p class="reveal mt-5 text-conxa-black/70 leading-relaxed max-w-md">
+          Un espacio pensado para quedarte, con pan recién horneado y café todos los días de la semana.
+        </p>
+
+        <div class="reveal mt-10">
+          <img
+            src="/conxa/img/ubicacion-1440.webp"
+            srcset="/conxa/img/ubicacion-480.webp 480w, /conxa/img/ubicacion-768.webp 768w, /conxa/img/ubicacion-1080.webp 1080w, /conxa/img/ubicacion-1440.webp 1440w"
+            sizes="(min-width: 1024px) 40vw, 100vw"
+            alt="Fachada de Conxa en San Luis Potosí, de día"
+            width="1440"
+            height="920"
+            loading="lazy"
+            decoding="async"
+            class="w-full h-[280px] md:h-[340px] object-cover"
+          />
+        </div>
+      </div>
+
+      <div class="lg:col-span-7 reveal">
+        <iframe
+          title="Mapa de ubicación de Conxa en San Luis Potosí"
+          src="https://maps.google.com/maps?q=Calle%20Ca%C3%B1ada%20Real%20165%2C%20Lomas%20del%20Tecnol%C3%B3gico%2C%20San%20Luis%20Potos%C3%AD%2C%20S.L.P.%2078215&z=16&output=embed"
+          class="w-full h-[360px] md:h-full min-h-[420px] border-0 grayscale contrast-125"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <section class="bg-conxa-black py-24 md:py-28">
+    <div class="mx-auto max-w-[1000px] px-5 md:px-8 text-center">
+      <p class="reveal font-display font-bold text-conxa-wheat text-[28px] sm:text-[34px] md:text-[42px] leading-tight">
+        Ven por tu pan del día.
+      </p>
+      <a href="https://wa.me/524441133863" target="_blank" rel="noopener" class="reveal btn-light mt-8 inline-flex">
+        Ordena por WhatsApp
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer id="footer" class="bg-conxa-black pt-20 pb-10">
+  <div class="mx-auto max-w-[1440px] px-5 md:px-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
+      <div class="lg:col-span-2">
+        <img src="/conxa/img/logo-conxa.png" alt="Conxa" width="150" height="50" class="h-8 w-auto" />
+        <p class="mt-6 text-conxa-wheat/60 text-[14px] leading-relaxed max-w-xs">
+          Panadería y cafetería mexicana contemporánea en San Luis Potosí.
+        </p>
+      </div>
+
+      <div>
+        <p class="kicker-light">Contacto</p>
+        <ul class="mt-5 space-y-3 text-conxa-wheat/80 text-[15px]">
+          <li><a class="hover:text-conxa-wheat transition-colors" href="https://wa.me/524441133863" target="_blank" rel="noopener">WhatsApp +52 444 113 3863</a></li>
+          <li><a class="hover:text-conxa-wheat transition-colors" href="mailto:conxapanaderia@gmail.com">conxapanaderia@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="kicker-light">Síguenos</p>
+        <ul class="mt-5 space-y-3 text-conxa-wheat/80 text-[15px]">
+          <li><a class="hover:text-conxa-wheat transition-colors" href="https://www.instagram.com/conxapanaderia" target="_blank" rel="noopener">Instagram — @conxapanaderia</a></li>
+          <li><a class="hover:text-conxa-wheat transition-colors" href="https://www.facebook.com/conxapanaderia" target="_blank" rel="noopener">Facebook</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="kicker-light">Ubicación</p>
+        <address class="mt-5 not-italic text-conxa-wheat/80 text-[15px] leading-relaxed">
+          Calle Cañada Real #165, Col. Lomas del Tecnológico, San Luis Potosí, S.L.P. 78215
+        </address>
+      </div>
+    </div>
+
+    <nav aria-label="Enlaces del sitio" class="mt-14 flex flex-wrap gap-x-8 gap-y-3 border-t border-conxa-wheat/10 pt-8">
+      <a href="#nosotros" class="text-conxa-wheat/70 hover:text-conxa-wheat text-[14px] transition-colors">Nosotros</a>
+      <a href="#menu" class="text-conxa-wheat/70 hover:text-conxa-wheat text-[14px] transition-colors">Menú</a>
+      <a href="#ubicacion" class="text-conxa-wheat/70 hover:text-conxa-wheat text-[14px] transition-colors">Ubicación</a>
+      <a href="mailto:conxapanaderia@gmail.com" class="text-conxa-wheat/70 hover:text-conxa-wheat text-[14px] transition-colors">Contacto</a>
+    </nav>
+
+    <p class="mt-8 text-conxa-wheat/40 text-[13px]">
+      © <span id="current-year">2026</span> Conxa. Todos los derechos reservados.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

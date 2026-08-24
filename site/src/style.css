@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Manrope:wght@400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: auto;
+  }
+  body {
+    @apply bg-conxa-wheat text-conxa-black font-body antialiased;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+  }
+  ::selection {
+    @apply bg-conxa-black text-conxa-wheat;
+  }
+  :focus-visible {
+    outline: 2px solid #171512;
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  .kicker {
+    @apply font-body font-bold uppercase text-[12px] md:text-[13px] tracking-kicker text-conxa-ash;
+  }
+  .kicker-light {
+    @apply kicker text-conxa-wheat/80;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-7 py-4 min-h-[44px] font-body font-bold text-[13px] uppercase tracking-[0.08em] transition-all duration-300 ease-out-expo;
+  }
+  .btn-dark {
+    @apply btn bg-conxa-soft text-conxa-wheat hover:scale-[1.03] hover:bg-conxa-black;
+  }
+  .btn-light {
+    @apply btn bg-conxa-wheat text-conxa-black hover:scale-[1.03] hover:bg-white;
+  }
+  .btn-outline {
+    @apply btn border border-conxa-wheat/40 text-conxa-wheat hover:bg-conxa-wheat/10 hover:scale-[1.03];
+  }
+
+  .nav-link {
+    @apply relative font-body font-bold text-[13px] uppercase tracking-[0.06em] text-conxa-wheat/90 py-2;
+  }
+  .nav-link::after {
+    content: "";
+    @apply absolute left-1/2 -bottom-0.5 h-[1.5px] w-0 -translate-x-1/2 bg-conxa-wheat transition-all duration-300 ease-out-expo;
+  }
+  .nav-link:hover::after,
+  .nav-link[aria-current="true"]::after {
+    @apply w-full;
+  }
+
+  .menu-tab {
+    @apply relative shrink-0 whitespace-nowrap font-body font-bold text-[13px] md:text-sm uppercase tracking-[0.05em] text-conxa-ash py-3 px-1 transition-colors duration-300 ease-out-expo;
+  }
+  .menu-tab::after {
+    content: "";
+    @apply absolute left-0 -bottom-px h-[2px] w-full origin-left scale-x-0 bg-conxa-black transition-transform duration-300 ease-out-expo;
+  }
+  .menu-tab[aria-selected="true"] {
+    @apply text-conxa-black;
+  }
+  .menu-tab[aria-selected="true"]::after {
+    @apply scale-x-100;
+  }
+
+  .menu-item {
+    @apply flex items-baseline justify-between gap-4 py-4 border-b border-conxa-black/10 break-words;
+  }
+  .menu-item:last-child {
+    @apply border-b-0;
+  }
+  .menu-item-name {
+    @apply font-body font-semibold text-[15px] md:text-[17px] text-conxa-black;
+  }
+  .menu-item-desc {
+    @apply block font-body text-[13px] md:text-[14px] text-conxa-ash mt-1 leading-snug;
+  }
+  .menu-item-price {
+    @apply shrink-0 font-body font-semibold text-[15px] md:text-[17px] text-conxa-ash tabular-nums;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  .reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  #site-header {
+    @apply fixed inset-x-0 top-0 z-50 bg-transparent transition-[transform,background-color,box-shadow] duration-500 ease-out-expo;
+  }
+  #site-header.is-solid {
+    @apply bg-conxa-black shadow-[0_1px_0_rgba(255,255,255,0.06)];
+  }
+  #site-header.is-hidden {
+    transform: translateY(-100%);
+  }
+
+  /* Mobile drawer: a single, always fully-opaque Negro Conxa layer.
+     No opacity tween is ever applied to this element — only `.hidden`
+     is toggled — so the overlay can never render semi-transparent. */
+  #mobile-drawer {
+    @apply fixed inset-0 z-[70] bg-conxa-black;
+  }
+
+  .menu-subgroup-title {
+    @apply kicker mt-6 mb-1 first:mt-0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
